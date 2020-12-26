@@ -1,34 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&display=swap");
-
+/* 기본 브라우저가 가지고 있는 것들으 초기화해주는 reset.css를 사용하는것이 좋다
+이것을 styels.css에 import해서 사용한다. */
+@import "reset.css";
+@import "status-bar.css";
 body {
   font-family: "Noto Serif JP", serif;
 }
 
-.status-bar {
+.welcome-header {
+  margin: 90px 0px;
+  text-align: center;
   display: flex;
-  /* justify-content: space-between; */
-  justify-content: center;
-}
-.status-bar__column {
-  width: 33%;
-}
-
-/* no service와 와이파이 간격 */
-.status-bar__column:first-child span {
-  margin-right: 5px;
-}
-/* 시계를 중간에 두기위한 css hack */
-.status-bar__column:nth-child(2) {
-  display: flex;
-  justify-content: center;
-}
-.status-bar__column:last-child {
-  display: flex;
-  justify-content: flex-end;
-  /* div안의 아이템들을 센터 */
+  flex-direction: column;
   align-items: center;
 }
-/*  */
-.status-bar__column .fa-battery-full {
-  margin: 0px 5px;
+.welcome-header__title {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.welcome-header__text {
+  width: 60%;
+  opacity: 0.7;
 }

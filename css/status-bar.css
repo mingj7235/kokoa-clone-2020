@@ -1,0 +1,29 @@
+.status-bar {
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: center;
+  padding: 5px 3px;
+}
+.status-bar__column {
+  width: 33%;
+}
+
+/* no service와 와이파이 간격 */
+.status-bar__column:first-child span {
+  margin-right: 5px;
+}
+/* 시계를 중간에 두기위한 css hack */
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  /* div안의 아이템들을 센터 */
+  align-items: center;
+}
+/*  */
+.status-bar__column .fa-battery-full {
+  margin: 0px 5px;
+}
