@@ -25,44 +25,83 @@ body {
   opacity: 0.7;
 }
 
-#login-form {
+.login-form {
   display: flex;
   flex-direction: column;
   margin: 0px 30px;
 }
-#login-form input {
+
+.login-form__input {
   border: none;
   padding: 15px 0px;
   font-size: 18px;
   margin-bottom: 25px;
-}
-
-/* submit 이 아닐때만 이것이 적용되도록해야함 */
-#login-form input:not([type="submit"]) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   transition: border-color 0.3s ease-in-out;
 }
 
-#login-form input::placeholder {
+.login-form__input::placeholder {
   color: rgba(0, 0, 0, 0.4);
 }
-
-#login-form input:focus {
+.login-form__input:focus {
   border-color: var(--yellow);
 }
 
-#login-form input[type="submit"] {
+.login-form__btn {
   background-color: var(--yellow);
-  /* 마우스 커서가 갔을때 바뀌도록 하는 것임 
-  여러가지 value들이 있다 (progress, not allowed 등등*/
   cursor: pointer;
   padding: 20px;
   border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  margin-bottom: 25px;
+  align-items: center;
 }
-
-#login-form a {
+.login-form__a {
   text-align: center;
   text-decoration: none;
   color: inherit;
   font-size: 13px;
 }
+
+/* #login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+} */
+/* #login-form input {
+  border: none;
+  padding: 15px 0px;
+  font-size: 18px;
+  margin-bottom: 25px;
+} */
+
+/* submit 이 아닐때만 이것이 적용되도록해야함 */
+/* #login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out;
+} */
+
+/* #login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#login-form input:focus {
+  border-color: var(--yellow);
+} */
+/* 
+#login-form input[type="submit"] {
+  background-color: var(--yellow); */
+/* 마우스 커서가 갔을때 바뀌도록 하는 것임 
+  여러가지 value들이 있다 (progress, not allowed 등등*/
+/* cursor: pointer;
+  padding: 20px;
+  border-radius: 10px;
+} */
+
+/* #login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
+} */
