@@ -7,19 +7,28 @@
     <title>Welcome to Kokoa Talk</title>
   </head>
   <body>
-    <div id="status-bar">
+    <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
-        <!--To Do : Wifi Icon-->
+        <!-- i 는 icon의 줄임말이고, font-awesome에서 가져 온 것임 -->
+        <i class="fas fa-wifi"></i>
       </div>
       <div class="status-bar__column">
         <span>18:43</span>
       </div>
       <div class="status-bar__column">
         <span>110%</span>
+        <i class="fas fa-battery-full"></i>
         <!-- Battery Icon -->
+        <i class="fas fa-bolt"></i>
         <!-- Lighting Icon -->
       </div>
     </div>
+    <!-- script는 항상 마지막에 있어야한다. body tag를 닫기 직전에! -->
+    <!-- fontawesome의 링크임  -->
+    <script
+      src="https://kit.fontawesome.com/93b3e709fe.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
