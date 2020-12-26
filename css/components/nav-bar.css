@@ -3,9 +3,12 @@
   bottom: 0;
   width: 100%;
   background-color: #f9f9fa;
-  padding: 20px 25px;
+  padding: 20px 22px;
 
-  /*  */
+  /* CSS가 오해하지 않도록
+  padding을 줘도 신경쓰지마! 내box사이즈를 늘리지말고
+  그대로 해주셈 이라는 의미임 
+  box사이즈는 border box로 유지해줘! 라고 요청하는것임  */
   box-sizing: border-box;
   border-top: 1px solid rgba(0, 0, 0, 0.25);
 }
@@ -16,5 +19,30 @@
 }
 
 .nav__link {
+  position: relative;
   color: #2e363e;
+}
+.nav__notification {
+  background-color: tomato;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  color: white;
+  font-weight: 600;
+  /* absolute는 relative를 가진 가장 가까운 부모를 기준으로 움직임 */
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+}
+.nav__dot {
+  background-color: tomato;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  position: absolute;
+  left: 25px;
+  bottom: 28px;
 }
