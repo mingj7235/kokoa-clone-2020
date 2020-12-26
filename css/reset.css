@@ -122,3 +122,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* customize (none reset.css from first version
+only for kokoa clone */
+input:focus {
+  outline: none;
+}
