@@ -53,7 +53,7 @@
   border: 1px solid #00c63a;
   border-radius: 10px;
   padding: 2px 5px;
-  margin-left: 100px;
+  /* margin-left: 100px; */
 }
 .fa-play {
   margin-top: 3px;
@@ -62,12 +62,19 @@
   opacity: 50%;
 }
 
+.user-component__friends__box {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
 .user-component__melon__friends {
   display: flex;
   border: 1px solid #00c63a;
   border-radius: 10px;
+  margin-right: 5px;
   padding: 2px 5px;
-  margin-left: 160px;
+  /* margin-left: 160px; */
 }
 
 .user-component__time {
