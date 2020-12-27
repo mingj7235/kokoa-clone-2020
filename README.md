@@ -1,6 +1,6 @@
 <!-- markdown tag -->
 
-# Kokoa Clone 2020 Update :grinning:
+# Kokoa Clone 2020 Update :shaved_ice:
 
 1. kakao talk program clone coding for study html and css.
 2. HTML & CSS got so much better.
