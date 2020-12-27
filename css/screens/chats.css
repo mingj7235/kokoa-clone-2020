@@ -1,7 +1,15 @@
 .chat-screen {
   display: flex;
   margin-bottom: 20px;
+  background-color: white;
+  transition: background-color 0.2s ease-in-out;
 }
+
+.chat-screen:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
 .chat-screen:first-child {
   border-top: var(--main-border);
   padding-top: 10px;
