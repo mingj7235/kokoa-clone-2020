@@ -1,0 +1,30 @@
+.screen-header__icons__dot {
+  background-color: tomato;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  display: flex;
+  position: absolute;
+  right: 15px;
+  top: 40px;
+}
+
+.find-icons {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.find-conds__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.find-conds__icon i {
+  font-size: 35px;
+}
+
+.find-conds__icon span {
+  margin-top: 15px;
+}
