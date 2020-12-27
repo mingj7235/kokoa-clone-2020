@@ -1,0 +1,25 @@
+#more-warning {
+  margin-top: 30px;
+  margin-left: 5px;
+  display: block;
+  border: 2px solid tomato;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 14px;
+  color: tomato;
+}
+
+.more-screen .icon-row {
+  margin-top: 35px;
+}
+
+.more-suggestions {
+  margin-top: 30px;
+  border-top: var(--main-border);
+  padding-top: 20px;
+}
+.more-suggestions__title {
+  margin-bottom: 20px;
+}

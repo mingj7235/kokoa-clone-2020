@@ -1,0 +1,50 @@
+.icon-row {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+
+.icon-row__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: color 0.3s ease-in-out;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.icon-row__icon:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.icon-row__icon i {
+  font-size: 35px;
+}
+
+.icon-row__icon span {
+  margin-top: 15px;
+}
+
+.icon-row-secondline {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#icon-row__ID {
+  width: 36px;
+  height: 36px;
+  display: block;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-top: -4px;
+  text-align: center;
+  line-height: 35px;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: -1.1px;
+}
