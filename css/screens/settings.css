@@ -1,0 +1,35 @@
+.settings__setting {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.settings__setting:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.settings__setting i {
+  opacity: 0.8;
+  margin-right: 20px;
+  font-size: 22px;
+}
+
+.settings__setting__iconbox {
+  width: 45px;
+}
+
+.settings__setting-column {
+  display: flex;
+  justify-content: center;
+}
+
+.settings__setting-column:last-child {
+  opacity: 0.5;
+  font-size: 14px;
+}
