@@ -41,6 +41,7 @@
 .message-row {
   width: 100%;
   display: flex;
+  margin-bottom: 25px;
 }
 
 .message-row img {
@@ -74,4 +75,33 @@
 .message__time {
   opacity: 0.8;
   font-size: 13px;
+}
+
+.message-row--own {
+  justify-content: flex-end;
+}
+
+.message-row--own .message__bubble {
+  background-color: var(--yellow);
+  border-top-right-radius: 3px;
+  border-top-left-radius: 15px;
+  margin-right: 0px;
+  margin-left: 5px;
+}
+
+/* order는 flex children에게만 적용된다.
+이것을 활용해서 flip할 수 있다.  */
+/* 하지만 이것은 코드가 길어질수있다. */
+/* .message-row--own .message__bubble {
+  order: 1;
+}
+
+.message-row--own .message__time {
+  order: 0;
+} */
+
+/* 이렇게하면 뒤집을 수 있다 이것역시 flex
+인것들을 반대로 뒤집는것이다 */
+.message-row--own .message__info {
+  flex-direction: row-reverse;
 }
