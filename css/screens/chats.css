@@ -17,3 +17,7 @@
 .chat-header {
   margin-bottom: -5px;
 }
+
+.screen__chat {
+  height: 500vh;
+}
