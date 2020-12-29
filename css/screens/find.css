@@ -111,6 +111,32 @@
   margin-left: 3px;
 }
 
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+.open-post__heart-count:hover i {
+  /* will-change : 브라우저에게 랜더링 힌트를줘서
+  element에 실행 되길 기대하는 변화를 명시한다.
+  즉, 브라우저에게 어떤게 변할것인지 명확히 말해줘서
+  다른것들이 변화하지않고 애니매이션을 개선해준다.
+  브라우저를 도와주는것이다. 변하는것이 무언ㅅ인지
+  확실히 말해주고 GPU가 가속하게된다. 
+  즉, 그래픽 카드를 이요해서 애니메이션을 가속화한다. */
+  will-change: transform;
+  animation: heartBeat 1s linear infinite;
+}
+
 #find__contacts {
   text-align: center;
 }
