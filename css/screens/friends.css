@@ -28,6 +28,18 @@
   justify-content: space-between;
   color: rgba(0, 0, 0, 0.5);
 }
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    /* 마우스에 걸리지 않게 빠져버리는 것임
+    이게 없으면 투명도만 있는 layor가 여전히 존재한다
+    하지만 완전히 없애려면 js를 써야한다 */
+    visibility: hidden;
+  }
+}
 
 #splash-screen {
   background-color: var(--yellow);
@@ -39,4 +51,11 @@
   justify-content: center;
   align-items: center;
   font-size: 122px;
+  /* forward : 애니메이션의 마지막 속성값을 (마지막 속성값은
+  마지막 keyframes로 정해지고) 애니메이션이 끝나고도
+  유지한다. 
+  즉, keyframes에서 마지막 속성으로 준 opacity:0이 유지된다  */
+  animation: hideSplashScreen 0.4s ease-in-out forwards;
+  /* 애니메이션이 기다리게 하는것임 */
+  animation-delay: 2s;
 }
