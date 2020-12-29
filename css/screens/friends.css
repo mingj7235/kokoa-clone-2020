@@ -1,8 +1,10 @@
 #friends-display-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   text-align: center;
-  display: block;
-  background-color: #fafafa;
-  padding: 15px 0px;
+  background-color: rgba(0, 0, 0, 0.04);
+  padding: 8px 10px;
   font-size: 18px;
   margin-bottom: 10px;
   margin-top: -15px;
@@ -10,6 +12,29 @@
 
 #friends-display-link i {
   color: rgb(0, 0, 0, 0.3);
+}
+.friends-screen__search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.friends-screen__search__friends {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  padding: 3px;
+  width: 85%;
+  height: 20px;
+}
+
+.friends-screen__search__friends::placeholder {
+  opacity: 0.5;
+}
+
+.friends-screen__search .fa-users {
+  margin-left: 10px;
 }
 
 .friends-screen {
@@ -61,4 +86,15 @@
   animation: hideSplashScreen 0.4s ease-in-out forwards;
   /* 애니메이션이 기다리게 하는것임 */
   animation-delay: 1s;
+}
+
+.friends-screen__channel .fa-chevron-up:hover {
+  cursor: pointer;
+}
+
+.friends-screen__mine:hover,
+.friends-screen__channel .user-component:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }

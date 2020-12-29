@@ -49,6 +49,19 @@
   animation: rotateSearch 1s linear infinite;
 }
 
+@keyframes rotateMusic {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+.screen-header__icons .fa-music:hover {
+  animation: rotateMusic 1s linear infinite;
+}
+
 @keyframes rotateCog {
   from {
     transform: none;
