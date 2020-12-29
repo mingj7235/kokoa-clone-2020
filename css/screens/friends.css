@@ -17,9 +17,12 @@
 }
 
 .friends-screen__channel {
+  margin-top: 10px;
+  padding-top: 15px;
+}
+.friends-screen__channel:first-child {
   margin-top: 25px;
   border-top: var(--main-border);
-  padding-top: 15px;
 }
 
 .friends-screen__channel-header {
@@ -57,5 +60,5 @@
   즉, keyframes에서 마지막 속성으로 준 opacity:0이 유지된다  */
   animation: hideSplashScreen 0.4s ease-in-out forwards;
   /* 애니메이션이 기다리게 하는것임 */
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
